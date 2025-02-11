@@ -31,3 +31,15 @@ for (let j = 0; j<arr[0].length;j++) {
     }
     console.log(bag.join(" "));    
 }
+
+// column convet to row
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     let bag = [];
+
+//     for (let j = 0; j < arr[i].length; j++) {
+//         bag.push(arr[i][j]);
+//     }
+//     console.log(bag.join(" "));    
+// }
