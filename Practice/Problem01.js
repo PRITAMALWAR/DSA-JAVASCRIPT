@@ -14,3 +14,7 @@
 // let numbers = [29,23,45,1, 2, 3];
 // console.log(Math.max(...numbers)); 
 // console.log(Math.min(...numbers)); 
+
+
+
+
