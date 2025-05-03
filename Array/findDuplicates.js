@@ -1,11 +1,19 @@
 function findDuplicates(arr) {
-    let duplicates = [];
+    let obj = {};
 
     for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
-                duplicates.push(arr[i]);
-            }
+        if (obj[arr[i]] === undefined) {
+            obj[arr[i]] = 1;
+        } else {
+            obj[arr[i]]++;
+        }
+    }
+
+
+    let duplicates = [];
+    for (let key in obj) {
+        if (obj[key] > 1) {
+            duplicates.push(Number(key));
         }
     }
 

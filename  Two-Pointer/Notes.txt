@@ -1,0 +1,16 @@
+
+============ Two Pointer =============
+
+
+When to Use Two Pointer Technique?
+
+
+When the array is sorted (mostly)
+
+When you need to find a pair whose sum equals a target
+
+When you want to remove duplicates
+
+When working on subarrays or sliding windows
+
+When checking for palindromes or doing reverse operations
