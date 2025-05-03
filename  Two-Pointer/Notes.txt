@@ -14,3 +14,179 @@ When you want to remove duplicates
 When working on subarrays or sliding windows
 
 When checking for palindromes or doing reverse operations
+
+
+
+Two Pointers Technique - Summary Notes
+
+ **Two Pointers** technique summary in a note format that you can refer to whenever you need. It’ll help you get a better understanding and quickly apply it to problems. Let’s go!
+
+---
+
+## **Two Pointers Technique - Summary Notes**
+
+### **📚 Definition**:
+
+Two Pointers is a technique in which two pointers are used to traverse a data structure (usually an array or a string) simultaneously or independently. This technique is often used in problems involving sorting, searching, and finding pairs, subarrays, or substrings with certain properties.
+
+---
+
+### **🔑 Key Concepts**:
+
+1. **Two Pointers (Left & Right)**:
+
+   * **Left Pointer**: Usually starts at the beginning of the array or string.
+   * **Right Pointer**: Typically starts at the end (or another starting point) and moves towards the left or the center.
+
+2. **Simultaneous Movement**:
+
+   * Both pointers move towards each other or in the same direction, adjusting the range they represent (a window) and solving the problem within that range.
+
+3. **Condition Checking**:
+
+   * The pointers are used to check and adjust conditions, like ensuring uniqueness, achieving a target sum, or finding an optimal subarray or substring.
+
+---
+
+### **📍 When to Use Two Pointers**:
+
+1. **When you have a sorted array** (or can be sorted).
+2. **When you need to find pairs, triplets, or specific ranges**.
+3. **When solving problems related to subarrays or substrings**.
+4. **When a sliding window technique is needed**.
+5. **When you need to remove duplicates or process unique elements**.
+
+---
+
+### **🔄 Types of Two Pointer Problems**:
+
+1. **Two Pointers on a Single Array**:
+
+   * **Purpose**: Traversing or manipulating elements in the array, often involving conditions like sum or product.
+   * **Example Problems**:
+
+     * Find the two numbers in an array whose sum equals a target.
+     * Reversing an array or finding a palindrome.
+     * Removing duplicates.
+
+2. **Two Pointers on Two Arrays**:
+
+   * **Purpose**: Comparing or merging elements from two arrays simultaneously.
+   * **Example Problems**:
+
+     * Merging two sorted arrays.
+     * Finding common elements between two sorted arrays.
+     * Comparing two arrays for equality.
+
+3. **Sliding Window Using Two Pointers**:
+
+   * **Purpose**: Keep track of a window that expands or contracts as per the condition.
+   * **Example Problems**:
+
+     * Longest substring without repeating characters.
+     * Longest subarray with sum equal to a target.
+     * Longest substring with at most K unique characters.
+
+4. **Palindrome and String Matching**:
+
+   * **Purpose**: Use two pointers to check if a string is a palindrome or for pattern matching.
+   * **Example Problems**:
+
+     * Check if a string is a palindrome.
+     * Finding anagrams of a string in another string.
+
+---
+
+### **⚙️ General Steps to Solve Using Two Pointers**:
+
+1. **Initialization**:
+
+   * Set two pointers, usually **left** at the start and **right** at the end (or wherever needed).
+2. **Condition Checking**:
+
+   * Check the condition between the two pointers (whether the sum matches a target, or if the substring is valid).
+3. **Expand and Shrink Window**:
+
+   * **Expand**: Move the right pointer to include new elements into the window.
+   * **Shrink**: If the window does not meet the condition, move the left pointer to narrow the window.
+4. **Stop Condition**:
+
+   * Usually, the loop continues until the left and right pointers meet or cross, ensuring all possible solutions are considered.
+
+---
+
+### **🎯 Examples of Common Two Pointer Problems**:
+
+1. **Two Sum** (in a sorted array)
+
+   * Given an array and a target sum, find two numbers that sum to the target.
+
+2. **Reverse an Array**:
+
+   * Reverse an array using two pointers. Left pointer starts at 0, and right pointer starts at the last index.
+
+3. **Valid Palindrome**:
+
+   * Check if a string is a palindrome using two pointers, one from the beginning and one from the end.
+
+4. **Longest Substring Without Repeating Characters**:
+
+   * Use two pointers to expand and shrink the window while maintaining a substring without repeating characters.
+
+5. **Longest Subarray with Sum Equal to K**:
+
+   * Use two pointers to find the longest subarray where the sum of its elements equals K.
+
+---
+
+### **🔑 Tips for Using Two Pointers**:
+
+1. **Start with sorted data** if possible to make the most of the technique.
+2. **Adjust the window dynamically**: Expand the window (move right pointer) until the condition fails, then shrink it (move left pointer).
+3. **Avoid unnecessary calculations**: If the condition is met or violated, adjust the pointers immediately to keep the solution efficient.
+4. **Track elements**: Use data structures like maps or sets to track the elements or frequencies in the window.
+5. **Be careful of edge cases**: Pay attention to boundaries, empty arrays, or strings with unique or repeated characters.
+
+---
+
+### **🚀 Example Problems for Practice**:
+
+1. **Find All Anagrams in a String**
+
+   * Use two pointers to find all occurrences of anagrams of a string in another string.
+
+2. **Max Sum Subarray of Size K**
+
+   * Find the maximum sum of a subarray of size K using the sliding window and two pointers.
+
+3. **Move Zeroes**
+
+   * Move all zeroes in an array to the end while maintaining the order of other elements.
+
+4. **Sum of Pairs in Sorted Array**
+
+   * Find pairs in a sorted array that add up to a specific target.
+
+5. **Merge Two Sorted Arrays**
+
+   * Merge two sorted arrays into one sorted array.
+
+---
+
+### **💡 Final Thoughts**:
+
+* **Two Pointers** is a **powerful** technique for solving problems related to **arrays, strings, and subarrays**.
+* It’s very efficient when applied to **sorted data** or when you need to process a **subarray/substring** in **linear time**.
+* **Sliding window** problems (like longest substring or subarray) are a natural fit for this technique.
+
+---
+
+### **🔥 Key Points Recap**:
+
+* **Two Pointers** is about managing two pointers (left & right) to solve problems efficiently.
+* It's most useful for problems involving **pairs, subarrays, or substrings**.
+* **Sliding window** is a common application of the Two Pointers technique.
+
+---
+
+I hope this summary helps! 🚀 Agar aur koi doubt ho toh batao, main tumhare liye aur bhi examples le aunga! 😎
